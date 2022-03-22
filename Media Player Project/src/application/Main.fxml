@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <center>
+      <MediaView fx:id="mView" fitHeight="200.0" fitWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#playPause" text="Button" />
+            <Button mnemonicParsing="false" onAction="#fromStart" text="Button" />
+            <Button mnemonicParsing="false" text="Button" />
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Media">
+          <items>
+              <MenuItem mnemonicParsing="false" text="Open file" onAction="#openFileAction" />
+            </items>
+            <items>
+              <SeparatorMenuItem mnemonicParsing="false"/>
+            </items>
+            <items>
+              <MenuItem mnemonicParsing="false" text="Quit" onAction="#quit"/>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Playback">
+            <Menu mnemonicParsing="false" text="Speed">
+            <items>
+              <MenuItem mnemonicParsing="false" text="0.5x" />
+            </items>
+            <items>
+              <MenuItem mnemonicParsing="false" text="0.75x" />
+            </items>
+            <items>
+              <MenuItem mnemonicParsing="false" text="1x" />
+            </items>
+            <items>
+              <MenuItem mnemonicParsing="false" text="1.5x" />
+            </items>
+            <items>
+              <MenuItem mnemonicParsing="false" text="2x" />
+            </items>
+          </Menu>
+          <items>
+              <SeparatorMenuItem mnemonicParsing="false"/>
+            </items>
+            <items>
+              <MenuItem mnemonicParsing="false" text="Play" />
+            </items>
+            <items>
+              <SeparatorMenuItem mnemonicParsing="false"/>
+            </items>
+            <items>
+              <MenuItem mnemonicParsing="false" text="Stop" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

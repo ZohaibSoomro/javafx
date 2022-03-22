@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="550.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UIController">
+   <children>
+      <ImageView fx:id="img" fitHeight="640.0" fitWidth="900.0" opacity="0.8" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <image>
+        <Image url="img/school.jpg" />
+        </image>
+      
+      </ImageView>
+      <Label alignment="CENTER" layoutX="43.0" layoutY="45.0" text="WELCOME TO SCHOOL MANAGEMENT SYSTEM" textFill="#270eea" wrapText="true">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <VBox layoutX="14.0" layoutY="120.0" prefHeight="500.0" prefWidth="202.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#stdInfoAction" prefHeight="69.0" prefWidth="203.0" text="Student Info" />
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="203.0" text="Staff Info" />
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="203.0" text="Payings" />
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="203.0" text="Button" />
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="203.0" text="Button" />
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="203.0" text="Button" />
+            <Button mnemonicParsing="false" onAction="#exitAction" prefHeight="69.0" prefWidth="203.0" text="Exit" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

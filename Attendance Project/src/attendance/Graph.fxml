@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="480.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendance.GraphController">
+   <children>
+      <LineChart fx:id="lineChart" layoutX="14.0" layoutY="14.0" prefHeight="377.0" prefWidth="806.0">
+        <xAxis>
+          <CategoryAxis label="Subject: DBS" side="BOTTOM" tickLabelFill="#0817f2" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Attendance(%)" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Label fx:id="totLectureLbl" layoutX="250.0" layoutY="391.0" prefHeight="34.0" prefWidth="248.0" text="TOTAL LECTURES: " textFill="#2207ed">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <Label fx:id="presentLbl" layoutX="93.0" layoutY="391.0" prefHeight="34.0" prefWidth="148.0" text="PRESENT: " textFill="#2207ed">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <Label fx:id="attendanceLbl" layoutX="506.0" layoutY="391.0" prefHeight="34.0" prefWidth="260.0" text="ATTENDANCE: " textFill="#2207ed">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
