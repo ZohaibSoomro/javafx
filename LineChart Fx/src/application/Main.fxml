@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <LineChart fx:id="lineChart" layoutX="14.0" layoutY="23.0" legendSide="LEFT" mouseTransparent="true" prefHeight="392.0" prefWidth="586.0" title="Line-Chart">
+        <xAxis>
+          <CategoryAxis label="Month" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Pay" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Button layoutX="284.0" layoutY="493.0" mnemonicParsing="false" onAction="#btn" prefHeight="42.0" prefWidth="139.0" text="Load Chart">
+         <font>
+            <Font name="Jokerman" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="label" layoutX="43.0" layoutY="445.0" prefHeight="80.0" prefWidth="214.0" textFill="#0ab6f5">
+         <font>
+            <Font name="Jokerman" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

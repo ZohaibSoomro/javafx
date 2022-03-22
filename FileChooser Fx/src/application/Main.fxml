@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="550.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.MainController">
+   <children>
+      <Button fx:id="btn2" layoutX="66.0" layoutY="281.0" mnemonicParsing="false" onAction="#btn2Action" prefHeight="42.0" prefWidth="167.0" text="Select multi file">
+         <font>
+            <Font name="Jokerman" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn1" layoutX="66.0" layoutY="157.0" mnemonicParsing="false" onAction="#btn1Action" prefHeight="42.0" prefWidth="167.0" text="Select one file">
+         <font>
+            <Font name="Jokerman" size="18.0" />
+         </font>
+      </Button>
+      <ListView fx:id="listView" layoutX="248.0" layoutY="78.0" prefHeight="391.0" prefWidth="290.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.MainController">
+   <children>
+      <DatePicker fx:id="dp" layoutX="48.0" layoutY="75.0" onAction="#showDate" prefHeight="35.0" prefWidth="256.0" showWeekNumbers="true" />
+      <Label fx:id="showDate" layoutX="48.0" layoutY="175.0" prefHeight="46.0" prefWidth="244.0" text="Date" />
+   </children>
+</AnchorPane>
