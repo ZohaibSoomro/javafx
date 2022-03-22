@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <center>
+      <MediaView fx:id="mView" fitHeight="200.0" fitWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <HBox spacing="5.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#play" text="play" BorderPane.alignment="CENTER" />
+            <Button mnemonicParsing="false" onAction="#pause" text="pause" />
+            <Button mnemonicParsing="false" onAction="#fast" text="2x" />
+            <Button mnemonicParsing="false" onAction="#slow" text="0.5x" />
+            <Button mnemonicParsing="false" onAction="#reload" text="reload" />
+            <Button mnemonicParsing="false" onAction="#start" text="start" />
+            <Button mnemonicParsing="false" onAction="#last" text="last" />
+            <Slider fx:id="volumeSlider" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

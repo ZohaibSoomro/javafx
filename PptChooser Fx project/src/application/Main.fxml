@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Button fx:id="single" layoutX="21.0" layoutY="114.0" mnemonicParsing="false" onAction="#singleBtn" prefHeight="42.0" prefWidth="176.0" text="Select One File">
+         <font>
+            <Font name="Jokerman" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="multi" layoutX="22.0" layoutY="269.0" mnemonicParsing="false" onAction="#multiBtn" prefHeight="42.0" prefWidth="184.0" text="Select Multi Files">
+         <font>
+            <Font name="Jokerman" size="18.0" />
+         </font>
+      </Button>
+      <ListView fx:id="listView" layoutX="213.0" layoutY="91.0" prefHeight="316.0" prefWidth="378.0" />
+      <Label layoutX="85.0" layoutY="14.0" prefHeight="54.0" prefWidth="453.0" text="FileChooser Using JavaFx">
+         <font>
+            <Font name="Jokerman" size="34.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.1531791907514451" centerY="0.4408866995073892" cycleMethod="REPEAT" focusAngle="26.57" focusDistance="0.8101265822784809" radius="0.24683544303797467">
+               <stops>
+                  <Stop color="#9107eb" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>

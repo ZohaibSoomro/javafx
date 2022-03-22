@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;application.Mynumber&apos; to &apos;MyNumber&apos;&#x0D;&#x0A;- Original project: &apos;Property Fx Example&apos;&#x0D;&#x0A;- Original element: &apos;application.Mynumber&apos;&#x0D;&#x0A;- Renamed element: &apos;application.MyNumber&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Mynumber&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;application{Mynumber.java[Mynumber" matchStrategy="1" name="MyNumber" qualified="false" references="true" similarDeclarations="false" stamp="1603189003883" textual="false" version="1.0"/>
+</session>
